@@ -1,0 +1,13 @@
+.canvas{
+    position:absolute;
+    border:2px dotted black;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+#canvas-draft{
+    background-color: transparent;
+    position: absolute;
+}
