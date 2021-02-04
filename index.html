@@ -4,29 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Canvas Pix</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./colorbar.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <!-- colorbox cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
 </head>
 <body>
 
 <!-- Loading Screen -->
 <img id="furbygif" src="./assets/furbylogo.gif" alt="furby">
 <img id="intro-text" src="./assets/Intro-Text.png" alt="text">
-
+<audio autoplay>
+  <source src="http://soundfxcenter.com/video-games/super-mario-bros/8d82b5_Super_Mario_Bros_Stage_Clear_Sound_Effect.mp3" type="audio/mpeg"/>
+</audio>
 
 <!-- NAV BAR -->
 <nav>
   <ul class="menu">
-    <li class="logo"><a href="#"><img src="assets/furbylogo.gif" width="20"></a></li>
+    <li class="logo"><a href="#"><img src="assets/furbylogo.gif" width="20"></a> CANVAS PIX 2021</li>
     <li class="item has-submenu">
       <a tabindex="0">File</a>
       <ul class="submenu">
@@ -140,7 +137,7 @@
     <a href="#"><img src="assets/stamps/stamp-mario.png" id="mario"></a>
     <a href="#"><img src="assets/stamps/stamp-money.png" id="money"></a>
     <a href="#"><img src="assets/stamps/stamp-megaman.png" id="megaman"></a>
-    <a href="#"><img src="assets/stamps/stamp-pacman.png" id="pacman"></a>
+    <a href="#"><img src="assets/stamps/stamp-streetfighter.png" id="streetfigther"></a>
     <a href="#"><img src="assets/stamps/stamp-tamagotchi.png" id="tamagotchi"></a>
     <a href="#"><img src="assets/stamps/stamp-furby.png" id="furby"></a>
 
@@ -203,7 +200,6 @@
   <script type="text/javascript" src="./Features/crop.js"></script>
   <script type="text/javascript" src="./Features/thickness.js"></script>
   <script type="text/javascript" src="./Features/crop.js"></script>
-  <script type="text/javascript" src="./Features/quit.js"></script>
   <script type="text/javascript" src="./Features/save.js"></script>
   <script type="text/javascript">
     $("#rectangle-button, #circle-button, #oval-button, #text-button, #triangle-button").on("click",function(e){
