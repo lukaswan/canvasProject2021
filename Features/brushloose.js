@@ -2,7 +2,6 @@ class DrawingBrushLoose extends Painting {
     constructor(ctxReal) {
         super();
         this.ctxReal = ctxReal;
-        
         this.isDrawing = false;
         this.density = 150;
     }

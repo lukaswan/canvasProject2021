@@ -43,7 +43,7 @@
 body {
     overflow:hidden;
     font-family: ChicagoFLF;
-    font-size: 15px;
+    font-size: 14px;
     color: black !important;
     background-image: url("./assets/bg.jpg");
       background-repeat: no-repeat;
@@ -76,7 +76,7 @@ body {
     list-style-type: none;
   }
   .logo {
-    font-size: 15px;
+    font-size: 13px;
     /* padding: 7.5px 10px 7.5px 0; */
   }
   .item{
@@ -86,14 +86,15 @@ body {
   /* Mobile menu */
   .menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     padding: 2px;
+    clear:both;
 
   }
   .menu li a {
-    padding: 15px 5px;
+    padding: 15px 6px;
   }
   a:focus{
       outline:none;
@@ -197,7 +198,7 @@ body {
     position: absolute;
     overflow: hidden;
     width: 105px;
-    padding-top: 60px;
+    padding-top: 55px;
     padding-left: 5px;
     height:580px;
   }
@@ -244,7 +245,7 @@ body {
   /* ============= BOTTOM NAV ============= */
 .bottom-nav {
   position: absolute;
-  top: 620px;
+  top: 580px;
     padding-left: 150px;
     padding-top: 0px;
     justify-content: center;
@@ -277,7 +278,7 @@ body {
 
 .instruction-panel{
   position: absolute;
-  top:630px;
+  top:580px;
   left:620px;
   width:500px;
   display:none;
