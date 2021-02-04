@@ -43,8 +43,8 @@ $("#money").on('click', function(e){
 $("#megaman").on('click', function(e){
     source="assets/stamps/stamp-megaman.png"
 })
-$("#pacman").on('click', function(e){
-    source="assets/stamps/stamp-pacman.png"
+$("#streetfigther").on('click', function(e){
+    source="assets/stamps/stamp-streetfighter.png"
 })
 $("#tamagotchi").on('click', function(e){
     source="assets/stamps/stamp-tamagotchi.png"
