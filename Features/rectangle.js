@@ -20,8 +20,8 @@ class DrawRectangle extends Painting{
    onMouseUp(coord){
        this.contextdraft.clearRect(0,0,canvasDraft.width,canvasDraft.height)
        this.contextreal.fillStyle = color;
-       ctx.lineWidth = 0;
-       ctx.shadowBlur=0;
+        this.contextreal.lineWidth = 0;
+        this.contextreal.shadowBlur=0;
        this.contextreal.fillRect(this.origX,this.origY,coord[0]-this.origX,coord[1]-this.origY)
    }
 } 

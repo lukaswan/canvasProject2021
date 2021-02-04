@@ -10,6 +10,7 @@ let color;
 let source;
 let thickness;
 let stamp;
+let paste;
 let currentPaintSize = 2;
 let currentDrawColor = "black";
 
@@ -46,7 +47,6 @@ $('#canvas-draft').on("mouseup", function (e) {
     
 })
 
-
 class Painting {
     constructor() { }
     onMouseDown() { };
@@ -55,6 +55,7 @@ class Painting {
     onMouseLeave() { };
     //added
     onMouseFinish() { };
+    onMouseDoubleClick(){};
 
 }
 
