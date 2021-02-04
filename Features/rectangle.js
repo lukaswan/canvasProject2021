@@ -6,19 +6,29 @@ class DrawRectangle extends Painting{
     }
 
     onMouseDown(coord,event){
-        this.contextdraft.fillStyle="black";
+        this.contextdraft.fillStyle=color;
         this.origX=coord[0];
         this.origY=coord[1];
     }
 
    onDragging(coord,event){
-        this.contextdraft.fillStyle = "black";
+        this.contextdraft.fillStyle = color;
         this.contextdraft.clearRect(0,0,canvasDraft.width,canvasDraft.height)
        this.contextdraft.fillRect(this.origX,this.origY,coord[0]-this.origX,coord[1]-this.origY);
 
    } 
    onMouseUp(coord){
-       this.contextdraft.clearRect(0,0,this.contextdraft.width,this.contextdraft.height)
+       this.contextdraft.clearRect(0,0,canvasDraft.width,canvasDraft.height)
+       this.contextreal.fillStyle = color;
+       ctx.lineWidth = 0;
+       ctx.shadowBlur=0;
        this.contextreal.fillRect(this.origX,this.origY,coord[0]-this.origX,coord[1]-this.origY)
    }
 } 
+
+
+$('#rectangle-button').on('click',function(e){
+    currentFunction = new DrawRectangle(ctxdraft,ctxreal);
+    $("p").css("display", "none");
+    $("#rect-inst").css("display","block");
+ })
