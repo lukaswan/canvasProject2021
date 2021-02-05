@@ -27,8 +27,8 @@ class StraightLine extends Painting {
     onMouseUp(coord) {
         this.ctxdraft.closePath();
         this.ctxreal.beginPath();
-        ctx.lineWidth = 0;
-        ctx.shadowBlur=0;
+        this.ctxreal.lineWidth = 0;
+        this.ctxreal.shadowBlur=0;
         this.ctxreal.moveTo(this.origX, this.origY);
         this.ctxreal.lineTo(coord[0], coord[1]);
         this.ctxreal.closePath();

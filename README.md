@@ -12,7 +12,9 @@ Load on your local port to see the application.
 
 The following was used to create the Canvas Pix Project:
 
-JQuery - for simplicity in event handling, ajax interactions and HTML document traversing
+JQuery - For simplicity in event handling, ajax interactions and HTML document traversing
+
+Adobe Photoshop - For creating images and icons
 
 Online Internet links - To have starting music
 
